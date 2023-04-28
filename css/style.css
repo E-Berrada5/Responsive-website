@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Helvetica,Arial,sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: black;
+    padding: 7px;
+    cursor:url(../Images/cursor.png), pointer;
+}
+
+main{
+    display: grid;
+    grid-gap: 7px; 
+    grid-template-columns:  repeat(2,1fr);
+    grid-template-rows: 118px 2fr 2fr;
+    height: 100%;
+}
+
+.header-left, .header-footer-right {
+background-color: white;
+border: 1px solid black;
+padding: 6px;
+}
+.space-purple{
+    background-color: #C3A5F5;
+    border: 1px solid black;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 350%;
+}
+.contact-green{
+    background-color: #3CC8AA;
+    border: 1px solid black;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:350%;
+}
+.membership-yellow{
+    background-color: #FFE000;
+    border: 1px solid black;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:350%;
+}
+.members-salmon{
+    background-color: #FFA9AF;
+    border: 1px solid black;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:350%;
+}
+a{
+    font-style: bold;
+    text-decoration: none;
+    color: #000;
+    font-size:135%;
+    position: relative;
+    left: 10px;
+    top: 40px;
+}
+.text-topright{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 22px;
+}
+.text-topright2{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 22px;
+}
+.header-footer-text1{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 22px;
+}
+.header-footer-text2{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 22px;
+}
+.header-footer-text3{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 22px;
+}
+.burger{
+    position: relative;
+    left: 20px;
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+}
+
+.burger1,
+.burger2,
+.burger3 {
+    margin: 10%;
+    width: 3.5rem;
+    height: 0.5rem;
+    background-color: black;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+
+}
+
+.burger:hover .burger1 {
+    transform: translateY(10px);
+    transition: 0.5s ease-in-out;
+}
+
+.burger:hover .burger3 {
+    visibility: hidden;
+    transition: 0s;
+}
+
+.burger:hover .burger2 {
+    transform: rotate(90deg);
+    transition: 0.5s ease-in-out;
+}
+.effet {
+    transform: scale(1);
+    transition: transform 0.5s ease-out;
+    color: black;
+}
+.effet:hover{
+    transform: scale(1.5);
+    transition: transform 0.5s ease-out;
+
+}
